@@ -1,0 +1,23 @@
+::selection {
+  background: #fdfd00;
+  color: deeppink;
+}
+
+:root {
+  background: deeppink;
+  color: #111;
+}
+
+:any-link {
+  color: #fdfd00;
+}
+
+@media (prefers-contrast: less) {
+  :root {
+    background: mistyrose;
+  }
+
+  :any-link {
+    color: deeppink;
+  }
+}

@@ -1,0 +1,43 @@
+:root {
+  font-size: calc(1em + 2vmin + 3vmax);
+}
+
+:any-link {
+  text-decoration: wavy underline;
+}
+
+:focus {
+  outline-color: currentColor;
+  outline-style: outset;
+  outline-width: thick;
+}
+
+body {
+  margin: auto;
+}
+
+figure {
+  margin: auto;
+  padding-block-end: 3rem;
+}
+
+samp {
+  align-items: center;
+  display: flex;
+  flex-flow: column;
+  font-size: 2em;
+  font-weight: bold;
+  justify-content: center;
+  margin-block-start: 33vh;
+  margin-block-end: 33vh;
+}
+
+figcaption {
+  font-family: sans-serif;
+  line-height: 1.5;
+  max-width: 10em;
+  position: absolute;
+  top: 100vh;
+  padding: 5vmin;
+  padding-bottom: 5rem;
+}
