@@ -1,0 +1,36 @@
+::selection {
+  background: #fdfd00;
+  color: deeppink;
+}
+
+:root {
+  --warm: orange;
+  --cool: #7101b1;
+  accent-color: var(--cool);
+  background-color: var(--warm);
+  color: var(--cool);
+}
+
+:any-link {
+  color: inherit;
+  background-color: transparent;
+  transition: filter 360ms;
+}
+
+:focus {
+  filter: hue-rotate(-120deg);
+  box-shadow: 0 0 2em 1em var(--warm);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    background-color: var(--cool);
+    color: var(--warm);
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --warm: seashell;
+  }
+}
